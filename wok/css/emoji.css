@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+   
+    background-color: black;
+    border-radius: 35px;
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+
+}
+input{
+    height: 100%;
+    width: 100%;
+    background-color: chartreuse;
+    /* appearance: none; */
+    position: relative;
+}
+span{
+    width: 40px;
+    height: 40px;
+    background-color: cadetblue;
+}
+span::before{
+    
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: cornsilk;
+content: "";
+}
+input:checked{
+background-color: crimson;
+}

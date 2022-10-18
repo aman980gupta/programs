@@ -1,0 +1,49 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    display: inline-block;
+
+}
+.d1,nav,.di2{
+    display: inline-block;
+    margin: auto;
+}
+nav,.di2{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    /* text-decoration: none; */
+
+}
+.d1,.di2{
+    margin: 10px 20px;
+}
+nav ul li a, .di2{
+    text-decoration: none;
+    margin: auto;
+    padding: 0 20px;
+    text-transform: capitalize;
+}
+ul li a:hover{
+    background-color: bisque;
+}
+.di2{
+    display: none;
+}
+.list{
+    display: block;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 15px;
+
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
