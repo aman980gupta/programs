@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            display: block;
+            min-height: 50vh;
+            min-width: 50%;
+            background-color: aqua;
+        }
+        .noActive{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>click me</button>
+    <div class="noActive">
+
+    </div>
+    <script>
+        let div = document.querySelector("div");
+        let btn = document.querySelector("button")
+        btn.addEventListener("click",function(e){
+            if(div.classList.contains("active")){
+                div.classList.remove("active");
+                div.classList.add("noActive");
+            }
+            else {
+                div.classList.remove("noActive");
+                div.classList.add("active");
+            }
+            console.log(div.className)
+        })
+    </script>
+</body>
+</html>

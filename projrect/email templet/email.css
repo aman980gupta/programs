@@ -1,0 +1,138 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_div{
+    width: 80%;
+    min-height: 100vh;
+    background-color: aqua;
+
+}
+.head{
+    background-color: yellow;
+    color: black;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head span{
+    font-size: 2rem;
+
+}
+.image{
+    background-image: url(./Black-Friday.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+.image div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: beige;
+    align-items: center;
+    top: 70%;
+    left: 14%;
+}
+.image div span {
+    background: -webkit-linear-gradient( white ,gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.image div button{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    border: none;
+}
+.image div button:hover{
+    color: black;
+    background-color: white;
+}
+.div3{
+    padding: 8% 15%;
+    display: flex;
+    background-color: blueviolet;
+    width: 100%;
+    /* height: 30vh; */
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.div3_text span,.div3_text p{
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+}
+
+.div3 .div3_text h4 {
+        width: 100%;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        font-size: 2rem;
+        padding-bottom: 11px;
+    }
+.div3_img{
+    width: 250px;
+    height: 250px;
+    background-color: brown;
+}
+.div4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.div4_inside {
+    width: 38%;
+}
+
+.fa {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 10px 15px;
+    color: #27403e;
+}
+.card {
+    width: 170px;
+    height: 130px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    font-size: 1.5rem;
+}
+.footer2 {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.footer2 span {
+    margin-bottom: 18px;
+}

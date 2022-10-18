@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+/* burger */
+.ham{
+    display: none;
+
+}
+.ham .ham-bur{
+    
+}
+/* Header css*/
+header{
+    background-color: aliceblue;
+    width: 100%;
+}
+
+footer{
+    background-color:blueviolet;
+    
+}
+footer div{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 30px;
+}
+.nav .logo{
+    text-transform: uppercase;
+}
+.nav .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav .menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 5px;
+    text-transform: capitalize;
+
+
+}
+.nav .menu ul li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav .menu ul li a:hover{
+    background-color: rgb(116, 40, 204);
+    
+}
+/* main css */
+main{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(20,1fr);
+    gap: 2px;
+    
+}
+.left-aside{
+    grid-column: 1/4;
+    background-color: rgb(18, 90, 60);
+}
+.right-aside{
+    grid-column: -1/-4;
+    background-color: darkolivegreen;
+}
+section{
+    grid-column: 4/-4;
+    background-color: darkorange;
+}
+.sec-main{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(250px,1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.img{
+    width: 100%;
+    
+    height: 100%;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+.img img{
+width: 100%;
+height: 100%;
+cursor: pointer;
+}
+
+
+/* median */
+@media screen and (max-width:1150px) {
+    .left-aside{
+        grid-column: 1/3;
+    }
+    .right-aside{
+        grid-column: -1/-5;
+        background-color: darkolivegreen;
+    }
+    section{
+        grid-column: 3/-5;
+        background-color: darkorange;
+    }
+}
+
+@media screen and (max-width:750px) {
+    main{
+        background-color: darkorange;
+    }
+    .nav{
+        font-size: 20px;
+    }
+    /* .left-aside{
+        grid-column: 0/0;
+    } */
+    .right-aside{
+        grid-column: -1/-3;
+        background-color: darkolivegreen;
+    }
+    section{
+        grid-column: 1/-3;
+        background-color: darkorange;
+    }
+    
+}
+/* hambergur */
+@media screen and (max-width:540px) {
+    .nav .menu{
+        display: none;
+    }
+    .ham{
+        display: flex;
+        width: 30px;
+        flex-direction: column;
+        height: 30px;
+        background-color: darkcyan;
+    }
+    .ham .ham-bur{
+        border: 1px solid black;
+        line-height: 10px;
+        background-color: white;
+    
+        width: 37px;
+        height: 13px;
+    }
+}

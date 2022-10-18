@@ -1,0 +1,13 @@
+.img2{
+    width: 100%;
+    background: cornflowerblue;
+    height: 45vh;
+}
+.insi{
+    background-image: url(./bk4.jpg);
+    height: 100%;
+    width: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

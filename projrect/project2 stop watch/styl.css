@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+/* .wrapper{
+    
+    
+    
+} */
+
+.wrapper .time{
+
+    height: 100px;
+    user-select: none;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.wrapper .time span{
+    width: 50px;
+    text-align: center;
+
+}
+.time span.colon{
+    width: 10px;
+}
+.hour,.minute,.second,.colon,.milisec{
+    font-size: 2.6rem;
+    font-weight: 800;
+
+}
+.hour,.minute,.second,.milisec{
+    border: 2px solid black;
+    
+}
+.buttons{
+    text-align: center;
+
+}
+.buttons button{
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: #7D2Ae8;
+    background-color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+}
+.buttons button.active,.buttons button.stopActive{
+    cursor: not-allowed;
+    opacity: 0.8;
+}
