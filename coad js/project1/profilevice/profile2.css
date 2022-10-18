@@ -1,0 +1,62 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: aquamarine;
+    
+    
+    justify-content: center;
+    align-items: center;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    min-width: 70vw;
+}
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.person .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.person .img{
+    width: 150px;
+    height: 150px;
+}
+.person div img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%    
+}
+.person div #name{
+    line-height: 30px;
+    font-size: 30px;
+    padding: 3px 6px;
+    margin: 5px;
+}
+.person div #job{
+    line-height: 30px;
+    font-size: 30px;
+    padding: 3px 6px;
+    margin: 5px;
+}
+.person div #decription{
+    line-height: 20px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 3px 6px;
+}
+.btn button{
+    background-color: gray;
+    color: honeydew;
+    
+}

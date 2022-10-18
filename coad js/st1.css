@@ -1,0 +1,40 @@
+body{
+    
+    
+    height: 85vh;
+    background-color: cornsilk;
+
+}
+.mydivs{
+    
+    border: 2px solid blue;
+    background-color: darkgrey;
+    justify-content: center;
+    align-items: center;
+}
+.forflex{
+    display: flex;
+}
+.mydivs p{
+    color: cadetblue;
+}
+.mydivs ul{
+    display: flex;
+    list-style: none;
+
+}
+.mydivs ul li{
+    padding: 1px 9px;
+    
+}
+.mydivs ul li:hover{
+    background-color: darkseagreen;
+}
+a{
+    cursor: pointer;
+}
+.changeColourq{
+    background-color: dimgrey;
+    /* display: none; */
+    
+}
